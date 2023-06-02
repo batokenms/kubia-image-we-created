@@ -1,0 +1,14 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kubia-config
+data:
+  app.properties: |
+    key1=value1
+    key2=value2
+  database.properties: |
+    db.host=localhost
+    db.port=5432
+    db.username=myuser
+    db.password=mypassword

@@ -18,9 +18,31 @@ It treats each request independently, without relying on previous requests or st
 
 Each request for weather data is independent of previous requests, and you don't need to maintain any state between requests.
 
-Stateful deployments are useful when your application requires persistent data or maintains state, such as user sessions, databases, or queues.
+Stateful deployments are useful when your application requires persistent data or maintains a state, such as user sessions, databases, or queues.
 
-Stateless deployments are suitable when your application doesn't rely on persistent data or maintain state and treats each request independently.
+Stateless deployments are suitable when your application doesn't rely on persistent data or maintain a state and treats each request independently.
+
+# Persist Data for the Stateful Application 
+
+To persist data in a stateful application, you typically need to use a Persistent Volume (PV) in Kubernetes.
+
+A Persistent Volume is a storage piece in the cluster that applications can provision and use. 
+
+It provides a way to decouple storage from the application, allowing data to persist even if the application or pod is restarted or rescheduled.
+
+Think of a Persistent Volume as similar to a storage disk in traditional computing.
+
+It represents a chunk of storage capacity that can be dynamically provisioned and attached to a pod or container in Kubernetes.
+
+Persistent Volumes can be provisioned from various storage backends, including network-attached storage (NAS), cloud-based storage services, or local disk storage. The actual implementation and behavior of Persistent Volumes depend on the underlying storage provider.
+
+To use a Persistent Volume, you typically define a Persistent Volume Claim (PVC) in your application's deployment or stateful set.
+
+A PVC is a request for storage resources from the cluster, and it binds to an available Persistent Volume that meets the requested criteria (e.g., storage capacity, access mode).
+
+Once the PVC is bound to a Persistent Volume, you can mount it into your application's containers, allowing them to read from and write to the persistent storage. 
+
+This enables your stateful application to store and retrieve data that persists across pod restarts, scaling events, or even cluster failures.
 
 # Configmap Manifest 
 

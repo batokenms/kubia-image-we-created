@@ -1,3 +1,27 @@
+# Types of deployments in Kubernetes 
+
+Stateful Deployment:
+
+A stateful deployment is suitable when your application requires persistent data or maintains some form of state that needs to be preserved. 
+
+Imagine an online shopping application where users have shopping carts. 
+
+In a stateful deployment, each user's shopping cart data would be stored and associated with a specific application instance. 
+
+This ensures that even if the application or the underlying infrastructure fails, the user's shopping cart data remains intact.
+
+Stateless Deployment:
+
+A stateless deployment, on the other hand, is appropriate when your application doesn't rely on persistent data or maintain any long-term state. 
+
+It treats each request independently, without relying on previous requests or storing data internally. An example could be a weather forecasting service that provides current weather information. 
+
+Each request for weather data is independent of previous requests, and you don't need to maintain any state between requests.
+
+Stateful deployments are useful when your application requires persistent data or maintains state, such as user sessions, databases, or queues.
+
+Stateless deployments are suitable when your application doesn't rely on persistent data or maintain state and treats each request independently.
+
 # Configmap Manifest 
 
 

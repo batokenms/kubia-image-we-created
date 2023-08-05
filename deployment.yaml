@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: kubia-container
-          image: josh1991/kubia-v1:latest
+          image: jeanp12/kubia:latest
           ports:
             - containerPort: 8080

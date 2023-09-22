@@ -27,4 +27,4 @@ kubectl apply -f persistentvolume.yaml
 kubectl apply -f secret.yaml
 
 # Apply the service account
-kubectl apply -f serviceaccount.yml
+kubectl apply -f serviceaccount.yaml

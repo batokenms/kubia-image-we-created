@@ -5,7 +5,7 @@
 kubectl apply -f dev.yaml
 
 # Apply the clusterrole
-kubectl apply -f clusterrole & clusterolebinding.yaml 
+kubectl apply -f clusterrole-clusterolebinding.yaml 
 
 # Apply the deployment
 kubectl apply -f deployment.yaml

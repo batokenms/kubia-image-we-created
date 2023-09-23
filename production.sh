@@ -19,3 +19,6 @@ kubectl apply -f persistentvolume.yaml
 
 # Apply the secret
 kubectl apply -f secret.yaml
+
+# Apply Clusterrole and clusterrolebinding 
+kubectl apply -f cluster role & clusterrolebinding.yaml

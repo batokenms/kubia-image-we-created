@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: kubia-container
-          image: jeanp12/barel-httpd:latest
+          image: jeanp12/jean-httpd:latest
           ports:
             - containerPort: 8080
